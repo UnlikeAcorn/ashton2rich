@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add your own styles here */
+      form {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: #555;
+      }
+
+      form h2 {
+        margin-top: 0;
+        font-size: 28px;
+        font-weight: 300;
+      }
+
+      form p {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      form button[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      form button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfl_xj8yUiFOXfDoHtQXRMeW7jIUz76S7SylGIwtYZXuS6bzg/formResponse"
+    >
+      <h3>The rich's OF Management Form</h3>
+
+      <label for="First & Last Name">First & Last Name:</label><br />
+      <input type="text" id="First & Last Name" name="entry.626963421" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="entry.498123947" /><br />
+      <label for="Phone Number">Phone Number:</label><br />
+      <input type="text" id="Phone Number" name="entry.695308509" /><br />
+      <label for="Age">Age:</label><br />
+      <input type="text" id="Age" name="entry.77959963" /><br />
+      <label for="Do you already have a onlyfans?"
+        >Do you already have a onlyfans?</label
+      ><br />
+      <input
+        type="radio"
+        id="Yes"
+        name="entry.1231363014"
+        value="Yes"
+        checked
+      />
+      Yes<br />
+      <input type="radio" id="No" name="entry.1231363014" value="No" /> No<br />
+      <label for="color"
+        >About how many days of the week will you be making content for your
+        accounts. </label
+      ><br />
+      <input type="radio" id="days" name="entry.1548835803" value="1" checked />
+      1<br />
+      <input type="radio" id="days" name="entry.1548835803" value="2" checked />
+      2<br />
+      <input type="radio" id="days" name="entry.1548835803" value="3" checked />
+      3<br />
+      <input type="radio" id="days" name="entry.1548835803" value="4" checked />
+      4<br />
+      <input type="radio" id="days" name="entry.1548835803" value="5" checked />
+      5<br />
+      <input type="radio" id="days" name="entry.1548835803" value="6" checked />
+      6<br />
+      <input type="radio" id="days" name="entry.1548835803" value="7" checked />
+      7<br />
+      <label for="color"
+        >Would you like to have a fake name on platforms? </label
+      ><br />
+      <input type="radio" id="Yes" name="entry.363320236" value="Yes" checked />
+      Yes<br />
+      <input type="radio" id="No" name="entry.363320236" value="No" /> No<br />
+      <label for="color"
+        >Would you be comfortable with doing stuff on live? </label
+      ><br />
+      <input type="radio" id="Yes" name="entry.486806647" value="Yes" checked />
+      Yes<br />
+      <input type="radio" id="No" name="entry.486806647" value="No" /> No<br />
+      <label for="color">Who referred you to our management? </label><br />
+      <input
+        type="radio"
+        id="ashton2rich"
+        name="entry.778736104"
+        value="ashton2rich"
+        checked
+      />
+      ashton2rich<br />
+      <input
+        type="radio"
+        id="dylan2rich"
+        name="entry.778736104"
+        value="dylan2rich"
+      />
+      dylan2rich<br />
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+
+    <script>
+      function submitForm() {
+        // Submit the form data to your Google Form
+        document.getElementById("myForm").submit();
+
+        // Redirect the user to your page
+        setTimeout(function () {
+          window.location.href = "https://www.example.com/submitted.html";
+        }, 1000);
+
+        return false;
+      }
+    </script>
+  </body>
+</html>
