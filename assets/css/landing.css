@@ -1,0 +1,134 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  min-width: 100%;
+  min-height: 100%;
+}
+body {
+    background-color: #000;
+    font-family: "mc";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "mc";
+    src: url("../fonts/regular.otf") format("opentype");
+}
+
+#enter {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transition: .3s ease-in;
+    font-size: 50px;
+}
+
+.landing {
+    text-align: center;
+    height: 100%;
+}
+
+    .landing-logo {
+        width: 20em;
+    }
+
+    .landing a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease-in-out .1s;
+    }
+
+    .landing a:hover {
+        color: #7700FF;
+        text-decoration: none;
+    }
+
+    .landing .archive {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+
+/* Media query */
+@media (max-width: 1000px) {
+
+    #enter {
+        display: none;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .landing {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 9px;
+    }
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('contrasticon.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: url('contrasticon.png');
+  cursor: pointer;
+}
